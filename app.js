@@ -42,7 +42,7 @@ const server = http.createServer( async (req, res) => {
         let version = fs.readFileSync("version");
 
         //mandar informações pra quem fez o request e finalizar a requisição
-        res.end(version);
+        res.end(version + "\n");
 
         return;
     }
